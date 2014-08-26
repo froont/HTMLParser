@@ -161,9 +161,6 @@
             HTMLParser(html, {
 
                 'chars': function (s, tag) {
-                    if (/^script$/i.test(tag)) {
-                        s = '<![CDATA[' + s + ']]>';
-                    }
                     x.push(s);
                 },
 
